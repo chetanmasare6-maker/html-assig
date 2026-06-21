@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e learn - Onepage Education Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --primary-yellow: #f5d061;
+            --dark-blue: #2c3e50;
+            --navy-overlay: rgba(34, 49, 63, 0.85);
+            --text-muted: #7f8c8d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            background: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600') no-repeat center center/cover;
+            position: relative;
+            color: #fff;
+        }
+
+        .hero-overlay {
+            background-color: var(--navy-overlay);
+            padding-bottom: 60px;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+        
+        .brand-logo {
+            background-color: var(--primary-yellow);
+            color: var(--dark-blue) !important;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .nav-link {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-content h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            border-left: 4px solid #fff;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            max-width: 500px;
+        }
+
+        .btn-link-custom {
+            color: var(--primary-yellow);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        /* --- Lead Form --- */
+        .form-card {
+            background-color: var(--primary-yellow);
+            color: var(--dark-blue);
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .form-card h3 {
+            font-weight: 700;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .form-card p {
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+
+        .form-card .form-control, .form-card .form-select {
+            border: none;
+            border-radius: 2px;
+            padding: 10px 12px;
+            font-size: 0.9rem;
+        }
+
+        .btn-submit {
+            background-color: var(--dark-blue);
+            color: #fff;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 12px;
+            border: none;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #1a252f;
+            color: #fff;
+        }
+
+        /* --- Features Section --- */
+        .features-section {
+            padding: 80px 0;
+            background-color: #ffffff;
+        }
+
+        .section-title-wrapper {
+            border-left: 4px solid var(--primary-yellow);
+            padding-left: 15px;
+            margin-bottom: 40px;
+        }
+
+        .section-title-wrapper span {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .section-title-wrapper h2 {
+            font-weight: 800;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            margin: 0;
+            color: var(--dark-blue);
+        }
+
+        .feature-box {
+            margin-bottom: 40px;
+        }
+
+        .feature-icon {
+            background-color: var(--primary-yellow);
+            color: var(--dark-blue);
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            font-size: 1.2rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .feature-title {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--dark-blue);
+        }
+
+        .feature-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="hero-overlay">
+            
+            <nav class="navbar navbar-expand-lg navbar-dark pt-4">
+                <div class="container container-custom">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <span class="brand-logo">e</span> learn
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav gap-2">
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-white-50" href="#">Features</a></li>
+                            <li class="nav-item"><a class="nav-link text-white-50" href="#">Courses</a></li>
+                            <li class="nav-item"><a class="nav-link text-white-50" href="#">Teachers</a></li>
+                            <li class="nav-item"><a class="nav-link text-white-50" href="#">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link text-white-50" href="#">Testimonial</a></li>
+                            <li class="nav-item"><a class="nav-link text-white-50" href="#">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link text-white-50" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container container-custom mt-5 pt-4">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-7 hero-content">
+                        <h1>Take great online courses from any where in the world</h1>
+                        <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn-link-custom">View Courses <i class="fa-solid fa-angle-right ms-1"></i></a>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="form-card">
+                            <h3>Become a Member</h3>
+                            <p>Get instant access to 4500 video courses</p>
+                            <form>
+                                <div class="row g-2 mb-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="First name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Last name" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" required>
+                                        <option value="" selected disabled>Select Learning Program</option>
+                                        <option value="web-dev">Web Development</option>
+                                        <option value="data-science">Data Science</option>
+                                        <option value="design">UI/UX Design</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" rows="3" placeholder="Detail information"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-submit">Request Information</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="features-section">
+        <div class="container container-custom">
+            
+            <div class="section-title-wrapper">
+                <span>Memberships</span>
+                <h2>Include</h2>
+            </div>
+
+            <p class="text-muted mb-5 col-md-8 px-0">Phasellus nam dolor nibh. Nullam elementum tellus pretium feugiat. Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed tincidunt tristique enim sed sollicitudin.</p>
+
+            <div class="row">
+                <div class="col-md-4 feature-box d-flex">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div>
+                        <h4 class="feature-title">Unlimited access</h4>
+                        <p class="feature-desc">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 feature-box d-flex">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div>
+                        <h4 class="feature-title">4500 video courses</h4>
+                        <p class="feature-desc">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 feature-box d-flex">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h4 class="feature-title">Expert teachers</h4>
+                        <p class="feature-desc">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 feature-box d-flex">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div>
+                        <h4 class="feature-title">Valid Certification</h4>
+                        <p class="feature-desc">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 feature-box d-flex">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div>
+                        <h4 class="feature-title">On-the-go learning</h4>
+                        <p class="feature-desc">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 feature-box d-flex">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div>
+                        <h4 class="feature-title">24x7 Super Support</h4>
+                        <p class="feature-desc">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
